@@ -1,0 +1,15 @@
+[tool.black.dependencies]
+python = "^3.11"
+
+[tool.black]
+line-length = 125
+
+[tool.isort]
+combine_as_imports = true
+combine_star = true
+line_length = 125
+profile = "black"
+
+[tool.pyright]
+pythonversion = "^3.11"
+typeCheckingMode = "strict"
