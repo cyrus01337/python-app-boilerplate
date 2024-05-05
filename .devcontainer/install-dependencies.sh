@@ -10,3 +10,5 @@ if [ -f requirements.txt ]; then
 fi
 
 pip install $arguments
+pre-commit autoupdate
+pre-commit install
