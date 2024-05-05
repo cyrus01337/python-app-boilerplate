@@ -7,15 +7,19 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "DrMerfy.overtype",
                 "Gruntfuggly.todo-tree",
+                "TabNine.tabnine-vscode",
+                "henriiik.vscode-sort",
                 "johnpapa.vscode-cloak",
+                "lbragile.line-width-indicator",
                 "mikestead.dotenv",
                 "ms-python.black-formatter",
                 "ms-python.isort",
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "streetsidesoftware.code-spell-checker",
                 "sourcery.sourcery",
+                "streetsidesoftware.code-spell-checker",
                 "tamasfe.even-better-toml",
                 "wayou.vscode-todo-highlight"
             ]
