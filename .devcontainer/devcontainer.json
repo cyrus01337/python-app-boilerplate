@@ -25,6 +25,7 @@
             ],
             "settings": {
                 "python.pythonPath": "/workspace/.venv/bin/python",
+                "python.defaultInterpreterPath": ".venv/bin/python"
             }
         }
     },
