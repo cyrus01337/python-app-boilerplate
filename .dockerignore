@@ -1,0 +1,6 @@
+.devcontainer
+.editorconfig
+.pre-commit-config.yaml
+.sourcery.yaml
+pyproject.toml
+README.md
