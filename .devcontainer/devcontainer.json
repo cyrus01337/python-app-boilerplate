@@ -22,7 +22,10 @@
                 "streetsidesoftware.code-spell-checker",
                 "tamasfe.even-better-toml",
                 "wayou.vscode-todo-highlight"
-            ]
+            ],
+            "settings": {
+                "python.pythonPath": "/workspace/.venv/bin/python",
+            }
         }
     },
     "features": {
