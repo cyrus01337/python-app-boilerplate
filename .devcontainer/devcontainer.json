@@ -3,7 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/python:1-3.12",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace",
-    "postCreateCommand": "/bin/bash .devcontainer/install-dependencies.sh",
+    "postCreateCommand": ".devcontainer/setup.sh",
     "customizations": {
         "vscode": {
             "extensions": [
