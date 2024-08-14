@@ -1,37 +1,12 @@
 {
     "name": "Python App Boilerplate",
-    "image": "mcr.microsoft.com/devcontainers/python:1-3.12",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "dockerFile": "Dockerfile",
     "workspaceFolder": "/workspace",
+    "remoteUser": "python",
+    "postCreateUser": "python",
     "postCreateCommand": ".devcontainer/setup.sh",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "DrMerfy.overtype",
-                "Gruntfuggly.todo-tree",
-                "TabNine.tabnine-vscode",
-                "henriiik.vscode-sort",
-                "johnpapa.vscode-cloak",
-                "lbragile.line-width-indicator",
-                "mikestead.dotenv",
-                "ms-python.black-formatter",
-                "ms-python.isort",
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "sourcery.sourcery",
-                "streetsidesoftware.code-spell-checker",
-                "tamasfe.even-better-toml",
-                "wayou.vscode-todo-highlight"
-            ],
-            "settings": {
-                "python.pythonPath": "/workspace/.venv/bin/python",
-                "python.defaultInterpreterPath": ".venv/bin/python"
-            }
-        }
-    },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker": {},
-        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/devcontainers/features/github-cli:1": {}
     }
 }

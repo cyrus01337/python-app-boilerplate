@@ -1,19 +1,24 @@
 #!/usr/bin/env bash
-arguments=()
+set -e
+
+export PATH="$PATH:$HOME/.local/bin"
+
+requirements_files=()
 
 pip install uv
 uv venv
 source .venv/bin/activate
-echo ". .venv/bin/activate" >> $HOME/.bashrc
-
-if [ -f requirements.dev.txt ]; then
-    arguments+="-r requirements.dev.txt "
-fi
 
 if [ -f requirements.txt ]; then
-    arguments+="-r requirements.txt"
+    requirements_files+="-r requirements.txt"
 fi
 
-uv pip install $arguments
+for additional_requirements_file in requirements.*.txt; do
+    echo "$additional_requirements_file"
+
+    requirements_files+="-r$additional_requirements_file"
+done
+
+uv pip install --no-cache --link-mode=copy $requirements_files
 pre-commit autoupdate
 pre-commit install
